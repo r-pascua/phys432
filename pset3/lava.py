@@ -7,9 +7,9 @@ This simulation makes the following assumptions:
     - incompressible flow
     - no pressure gradient along the flow
 
-The problem is solved using a 1-dimensional advection-diffusion code with the
-Godunov method to handle advection and an implicit differentation scheme to
-handle diffusion.
+The problem is solved using a 1-dimensional diffusion code that uses an
+implicit scheme to handle diffusion. Gravity is applied as a constant
+forcing term at each integration.
 
 Note that the numerical solution slightly overshoots the steady-state solution
 at the top of the flow near the end of the simulation. This is partially due
